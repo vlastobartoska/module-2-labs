@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Module 2 Lab 2.1 HTML practice page">
+  <meta name="keywords" content="HTML, semantic HTML, forms, tables, media">
+  <meta name="author" content="Vlasto Bartoska">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 2.1 - HTML</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; color: #222; }
+    header, main, footer { max-width: 1000px; margin: auto; padding: 20px; }
+    nav a { margin-right: 16px; color: #0645ad; }
+    article { border-bottom: 1px solid #ddd; padding: 24px 0; }
+    table, th, td { border: 1px solid black; border-collapse: collapse; padding: 8px; }
+    img { margin-right: 12px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="form.html">Form</a>
+    </nav>
+    <h1>My HTML learning journey</h1>
+  </header>
+
+  <main>
+    <article>
+      <h2>Learning elements - div, span, p, pre, ul, li, ol, article</h2>
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>JavaScript</div>
+
+      <span>Structure</span>
+      <span>Style</span>
+      <span>Interaction</span>
+
+      <p>p represents paragraph     without preserving      spacing</p>
+      <pre>Text in         a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks</pre>
+
+      <h3>Unordered list</h3>
+      <ul>
+        <li>Write semantic HTML</li>
+        <li>Use clear headings</li>
+        <li>Add useful alt text</li>
+        <li>Test links and forms</li>
+      </ul>
+
+      <h3>Ordered list</h3>
+      <ol>
+        <li>Create the structure</li>
+        <li>Add content</li>
+        <li>Review the page
+          <ul>
+            <li>Check formatting</li>
+            <li>Check accessibility</li>
+          </ul>
+        </li>
+      </ol>
+    </article>
+
+    <article>
+      <h2>HTML table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Name</th>
+            <th>Topic</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Vlasto</td>
+            <td>Bartoska</td>
+            <td>HTML</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Module 2</td>
+            <td>Lab 2.1</td>
+            <td>Tables</td>
+          </tr>
+          <tr>
+            <td>Lab 2.1</td>
+            <td>Rowspan</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+
+    <article>
+      <h2>Images, video and audio</h2>
+      <img src="https://picsum.photos/400/400" alt="Random placeholder image" width="250" height="250">
+      <img src="assets/html_lab_image.jpg" alt="HTML lab example" width="250" height="250">
+
+      <figure>
+        <video controls width="250">
+          <source src="assets/flower.webm" type="video/webm">
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+        <figcaption>Example flower video.</figcaption>
+      </figure>
+
+      <figure>
+        <audio controls src="assets/t-rex-roar.mp3">
+          Your browser does not support the <code>audio</code> element.
+        </audio>
+        <figcaption>T-Rex roar audio clip.</figcaption>
+      </figure>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vlasto Bartoska</p>
+  </footer>
+</body>
+</html>

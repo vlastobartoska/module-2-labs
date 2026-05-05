@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 2.2 - CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="top">
+    <h1>CSS Practice Page</h1>
+    <p class="intro">This page demonstrates common CSS selectors and styling rules.</p>
+  </header>
+
+  <main>
+    <section class="card highlight">
+      <h2>About this lab</h2>
+      <p>CSS is used to control layout, colours, spacing, typography and responsive behaviour.</p>
+      <a href="#contact">Jump to contact</a>
+    </section>
+
+    <section class="card">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Type selectors</li>
+        <li>Class selectors</li>
+        <li>ID selectors</li>
+        <li>Hover states</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Simple table</h2>
+      <table>
+        <tr><th>Language</th><th>Use</th></tr>
+        <tr><td>HTML</td><td>Structure</td></tr>
+        <tr><td>CSS</td><td>Styling</td></tr>
+      </table>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact form</h2>
+      <form>
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Your name">
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Write a message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

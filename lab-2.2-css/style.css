@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f6f8; color: #222; }
+#top { background: #1f2937; color: white; padding: 40px 20px; text-align: center; }
+.intro { font-size: 1.2rem; color: #d1d5db; }
+main { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+.card { background: white; padding: 24px; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+.card h2 { margin-top: 0; color: #111827; }
+.highlight { border-left: 6px solid #2563eb; }
+a { color: #2563eb; font-weight: bold; }
+a:hover { color: #1d4ed8; text-decoration: none; }
+.skills-list li:nth-child(odd) { background: #eef2ff; }
+.skills-list li { padding: 8px; margin: 4px 0; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #d1d5db; padding: 10px; text-align: left; }
+th { background: #e5e7eb; }
+form { display: grid; gap: 10px; }
+input, textarea, button { font: inherit; padding: 10px; border: 1px solid #cbd5e1; border-radius: 8px; }
+button { background: #2563eb; color: white; cursor: pointer; border: none; }
+button:hover { background: #1d4ed8; }

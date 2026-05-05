@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 2.1 - Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; line-height: 1.6; }
+    nav a { margin-right: 16px; }
+    form { display: grid; gap: 18px; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
+    label { margin-right: 10px; }
+    input, select, button { padding: 8px; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="form.html">Form</a>
+  </nav>
+
+  <h1>Profile form</h1>
+  <form method="POST" action="http://127.0.0.1:5500/form.html">
+    <div>
+      <label for="first-name">First name</label>
+      <input id="first-name" name="firstName" type="text" required>
+    </div>
+    <div>
+      <label for="last-name">Last name</label>
+      <input id="last-name" name="lastName" type="text" required>
+    </div>
+
+    <div>
+      <p>Favourite coding language:</p>
+      <label><input type="radio" name="language" value="html"> HTML</label>
+      <label><input type="radio" name="language" value="css"> CSS</label>
+      <label><input type="radio" name="language" value="javascript"> JavaScript</label>
+    </div>
+
+    <div>
+      <p>Vehicles owned:</p>
+      <label><input type="checkbox" name="vehicle" value="car"> Car</label>
+      <label><input type="checkbox" name="vehicle" value="bike"> Bike</label>
+      <label><input type="checkbox" name="vehicle" value="scooter"> Scooter</label>
+    </div>
+
+    <div>
+      <label for="car-brand">Car brand</label>
+      <select id="car-brand" name="carBrand">
+        <option value="">Please choose</option>
+        <option value="toyota">Toyota</option>
+        <option value="mazda">Mazda</option>
+        <option value="hyundai">Hyundai</option>
+      </select>
+    </div>
+
+    <button type="submit">Submit form</button>
+  </form>
+</body>
+</html>
